@@ -8,3 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'code-convention-poc';
 }
+
+
+export function random(id:number) {
+  var kId = id + 1;
+  console.log(kId);
+}
