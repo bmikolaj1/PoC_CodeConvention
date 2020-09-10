@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -26,6 +26,9 @@ namespace CodeAnalyzerExample.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            (string name, int age) customer = GetStudent();
+            var student = new Student();
+
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
@@ -34,6 +37,22 @@ namespace CodeAnalyzerExample.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        private (string name, int age) GetStudent() => ("Pero", 2);
+
+        public int Test()
+        {
+            var test = true;
+            var a = test ?
+                5 :
+                6;
+            return 6;
+        }
+
+        public class Student
+        {
+            public int Age { get; set; }
         }
     }
 }
