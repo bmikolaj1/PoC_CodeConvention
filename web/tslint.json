@@ -1,7 +1,6 @@
 {
-  "extends": ["tslint:latest", "tslint-config-prettier", "tslint-plugin-prettier"],
+  "extends": ["tslint:latest", "tslint-config-prettier"],
   "rules": {
-    "prettier": true,
     "array-type": false,
     "arrow-return-shorthand": true,
     "curly": true,
@@ -58,5 +57,5 @@
     "use-pipe-transform-interface": true,
     "no-implicit-dependencies": [true, "dev"]
   },
-  "rulesDirectory": ["tslint-plugin-prettier"]
+  "rulesDirectory": ["codelyzer"]
 }
