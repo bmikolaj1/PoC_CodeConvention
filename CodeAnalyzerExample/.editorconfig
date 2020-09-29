@@ -232,8 +232,6 @@ dotnet_diagnostic.RCS1005.severity = suggestion
 dotnet_diagnostic.RCS1006.severity = warning
 # RCS1007: Add braces.
 dotnet_diagnostic.RCS1007.severity = warning
-# RCS1008: Use explicit type instead of 'var' (when the type is not obvious).
-dotnet_diagnostic.RCS1008.severity = suggestion
 # RCS1010: Use 'var' instead of explicit type (when the type is obvious).
 dotnet_diagnostic.RCS1010.severity = warning
 # RCS1013: Use predefined type.
