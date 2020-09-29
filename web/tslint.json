@@ -57,5 +57,5 @@
     "use-pipe-transform-interface": true,
     "no-implicit-dependencies": [true, "dev"]
   },
-  "rulesDirectory": ["codelyzer"]
+  "rulesDirectory": ["node_modules/codelyzer"]
 }
